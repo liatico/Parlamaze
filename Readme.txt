@@ -6,10 +6,5 @@ Parlamaze
 
 
 Authors:
-	Adir Biran
-	Liat Cohen
-
-
-Contact:
-	adir.biran@gmail.com
-	liatp@post.bgu.ac.il
+	Adir Biran		adir.biran@gmail.com
+	Liat Cohen		liatico77@gmail.com
