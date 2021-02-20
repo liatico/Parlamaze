@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="1.0" prefHeight="26.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#newGameButtonPushed" text="New Game" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadButtonPushedMainMenu" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitButtonPushed" text="Exit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#PropertiesButtonPushed" text="Properties" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Music">
+               <items>
+                  <CheckMenuItem fx:id="muteAllButton" mnemonicParsing="false" onAction="#muteAllButtonPushed" text="Mute All" />
+                  <CheckMenuItem fx:id="muteBackgroundButton" mnemonicParsing="false" onAction="#muteBackgroundButtonPushed" text="Mute Background Music" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Info">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#aboutButtonPushed" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#helpButtonPushed" text="Help" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutX="106.0" layoutY="32.0" prefHeight="333.0" prefWidth="600.0" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="297.0" fitWidth="598.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="2.0" layoutY="355.0" prefHeight="119.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newGameButtonPushed" text="New Game" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

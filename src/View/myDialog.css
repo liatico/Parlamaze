@@ -1,0 +1,33 @@
+.myDialog{
+    -fx-background-color: linear-gradient(#ECF4FB, #9ECAEB);
+}
+
+Button {
+    -fx-text-fill: white;
+    -fx-font-family: "David";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#FF8888, #FF4F4F);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+Button:hover{
+    -fx-background-color: linear-gradient(#FFBBBB, #FF8888);;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Tahoma";
+
+}
+.myDialog > *.header-panel{
+    -fx-background-color: linear-gradient(#FF8888, #FFBBBB);
+}
+.myDialog > *.header-panel *.label{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #292929;
+}
